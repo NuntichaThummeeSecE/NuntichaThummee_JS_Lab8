@@ -40,3 +40,13 @@ form.addEventListener(`submit`, (event) => {
     console.log(`name: ` + nameInput.value);
 });
 
+//Task 5 focus and blur events : change color to pink while clicking at input field and change to a different color when clicking somewhere else//
+const inputText = document.getElementById(`typeBox2`);
+
+inputText.addEventListener(`focus`, () => {
+    inputText.style.borderColor = `pink`;
+});
+
+inputText.addEventListener(`blur`,() => {
+    inputText.style.borderColor = `lightblue`;
+});
