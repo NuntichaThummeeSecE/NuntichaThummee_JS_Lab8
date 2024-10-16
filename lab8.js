@@ -24,6 +24,13 @@ createMouseEvent.addEventListener(`mouseout`, () => {
     createMouseEvent.style.backgroundColor = `lightblue`;
 });
 
+//Task 3 keyboard events//
+const keyboardEvent = document.getElementById(`keyboardEvents`);
+
+keyboardEvent.addEventListener(`keyup`,(event) => {
+    console.log(event.key);
+});
+
 
 
 
