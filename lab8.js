@@ -13,5 +13,20 @@ clickButton.addEventListener(`click`, () => {
     clickButton.innerHTML = `Clicked!`;
 });
 
+//Task 2 mouse event : function change bg color while moseover and mouseout//
+const createMouseEvent = document.getElementById(`mouseEvents`);
+
+createMouseEvent.addEventListener(`mouseover`, () => {
+    createMouseEvent.style.backgroundColor = `pink`;
+});
+
+createMouseEvent.addEventListener(`mouseout`, () => {
+    createMouseEvent.style.backgroundColor = `lightblue`;
+});
+
+
+
+
+
 
 
