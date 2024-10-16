@@ -50,3 +50,12 @@ inputText.addEventListener(`focus`, () => {
 inputText.addEventListener(`blur`,() => {
     inputText.style.borderColor = `lightblue`;
 });
+
+//Task 6 event delegation : select file from ul and make it change bg color when clicked//
+const clickToChange = document.querySelector(`ul`);
+
+clickToChange.addEventListener(`click`, (e) => {
+    if(e.target && e.target.nodeName == "LI") {
+        e.target.style.backgroundColor = `pink`;
+    }
+});
