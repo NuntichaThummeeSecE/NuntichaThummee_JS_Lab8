@@ -24,15 +24,19 @@ createMouseEvent.addEventListener(`mouseout`, () => {
     createMouseEvent.style.backgroundColor = `lightblue`;
 });
 
-//Task 3 keyboard events : function keyup //
+//Task 3 keyboard events : function keyup and add key pressed to the console //
 const keyboardEvent = document.getElementById(`keyboardEvents`);
 
 keyboardEvent.addEventListener(`keyup`, (event) => {
     console.log(`Key pressed:` + event.key);
 });
 
+//Task 4 form events : function recieve input from the user and keep the data in the console//
+const form = document.getElementById(`formEvents`);
+const nameInput = document.getElementById(`typeBox`);
 
-
-
-
+form.addEventListener(`submit`, (event) => {
+    event.preventDefault();
+    console.log(`name: ` + nameInput.value);
+});
 
